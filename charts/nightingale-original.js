@@ -42,9 +42,10 @@
 		function chart( selection ) {
 
 			selection.each( function( data ) {
-				var maxVal;
-				for (i = 0; i < data.length; i++){
-					maxVal = data[i].label;
+				//CUSTUM			
+				var listeStrings = []
+				for (i = 0; i < data.length; i++) {
+				   listeStrings[i] = data[i].dataTotal;
 				}
 
 				// Determine the number of wedges:
@@ -59,9 +60,8 @@
 				// Create the chart base:
 				createBase( this );
 
-				console.log(maxVal);
 				// Create the wedges:
-				createWedges( data );
+				createWedges( data, listeStrings );
 
 			});
 
@@ -125,9 +125,7 @@
 		}; // end FUNCTION createBase()
 
 
-		function createWedges( data ) {
-
-			//console.log(data);
+		function createWedges( data, maxValue ) {
 			// Create the wedge groups:
 			wedgeGroups = graph.selectAll('.wedgeGroup')
 				.data( data )
@@ -157,10 +155,14 @@
 			  	.attr('class', function(d) { return 'wedge ' + d.legend; })
 			  	.attr('d', arc );
 
+			//CUSTUM
+			var dataTotal;
+			for (i = 0; i < maxValue.length; i++) {
+				dataTotal = maxValue[i];
+			}
 			// Append title tooltips:
-			// wedges.append('svg:title')
-			// 	.text( function(d) { return d.legend + ': ' + (Math.floor(Math.pow(d.radius,2) * Math.PI / numWedges)) / (1000*12 /d.dataTotal); });
-			//console.log(maxValue);
+			wedges.append('svg:span')
+				.text( function(d) { return d.legend + ': ' + (Math.floor(Math.pow(d.radius,2) * Math.PI / numWedges)) / (1000*12 /dataTotal); });
 				// .text( function(d) { return d.legend + ': ' + Math.floor(Math.pow(d.radius,2) * Math.PI / numWedges); });
 
 
@@ -401,8 +403,6 @@
 		.types(Number)
 
 
-
-
 	// --- Mapping function ---
 	// For each record in the data returns the values
 	// for the X and Y dimensions and casts them as numbers
@@ -420,8 +420,6 @@
 			//i = i+1;
 		})
 	})
-
-
 
 
 
@@ -529,7 +527,6 @@
 		$("#chart .wedge").css("stroke", "#aaa").css("stroke-width", "1px");
 		$("#chart .label").css("font-size", "8px");
 	
-
 	})
 
 })();

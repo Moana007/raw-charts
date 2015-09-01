@@ -161,7 +161,7 @@
 				dataTotal = maxValue[i];
 			}
 			// Append title tooltips:
-			wedges.append('svg:span')
+			wedges.append('svg:title')
 				.text( function(d) { return d.legend + ': ' + (Math.floor(Math.pow(d.radius,2) * Math.PI / numWedges)) / (1000*12 /dataTotal); });
 				// .text( function(d) { return d.legend + ': ' + Math.floor(Math.pow(d.radius,2) * Math.PI / numWedges); });
 
@@ -381,21 +381,25 @@
 	var dataTotal = model.dimension() 
 		.title('Total d\'une part (donnée 1 + donnée 2 + le reste)')
 		.types(Number)
+		.required(1);
 
 	// angle/ordre/centre (=date)
 	var  dataAngle = model.dimension() 
 		.title('Catégories (Label)')
 		.types(String)
+		.required(1);
 
 	// Valeur d'une donnée
 	var data1 = model.dimension() 
 		.title('Données 1')
 		.types(Number)
+		.required(1);
 
 	// Valeur de la 2eme donnée 
 	var data2 = model.dimension() 
 		.title('Données 2')
 		.types(Number)
+		.required(1);
 
 	// Valeur de la 3eme donnée
 	var data3 = model.dimension() 
@@ -472,7 +476,6 @@
 			format = d3.time.format('%m/%Y'),
 			causes = ['data1', 'data2', 'data3'],
 			labels = ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Aout', 'Septembre', 'Octobre', 'Novembre', 'Decembre'];
-		//console.log(data);
 
 		// svg size
 		selection

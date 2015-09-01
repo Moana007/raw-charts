@@ -245,16 +245,19 @@
 	var  categorie = model.dimension() 
 		.title('Catégories/label')
 		.types(String)
+		.required(1);
 
 	// Valeur d'une donnée
 	var data1 = model.dimension() 
 		.title('Données 1')
 		.types(Number)
+		.required(1);
 
 	// Valeur de la 2eme donnée 
 	var data2 = model.dimension() 
 		.title('Données 2')
 		.types(Number)
+		.required(1);
 
 
 
@@ -296,13 +299,29 @@
 		.defaultValue(480) // chartWidth*0.8
 
 	//COLOR
-		// var colors1 = chart.color()
-		// 	.title("Color Data1")
-		// 	.defaultValue("#D90009")
-		// var colors2 = chart.color()
-		// 	.title("Color Data2")
-		// 	.defaultValue("#1900D4")
+		var colorCenter = chart.color()
+			.title("Couleur du centre")
+			.defaultValue("#2B2B2B")
 
+		var colorCenterFont = chart.color()
+			.title("Couleur de la police central")
+			.defaultValue("#fff")
+
+		var colorData1 = chart.color()
+			.title("Couleur de la donnée 1")
+			.defaultValue("#E9E581")
+
+		var colorData2 = chart.color()
+			.title("Couleur de la donnée 2")
+			.defaultValue("#DE1B1B")
+
+		var colorDataFont1 = chart.color()
+			.title("Couleur de la police de la donnée 1")
+			.defaultValue("#000")
+
+		var colorDataFont2 = chart.color()
+			.title("Couleur de la police de la donnée 2")
+			.defaultValue("#fff")
 
 	// --- Drawing function ---
 	chart.draw(function (selection, data){
@@ -321,18 +340,42 @@
 			stroke: "#fff"
 		};
 
-		var paperWidth = chartWidth.value;
-		var paperHeight = chartHeight.value;
 
+		//console.log(function(d) { console.log('toto'); return d.color ? colorData1()(d.color) : colorData1()(null); });
 
-		function valuesToArray(data) {
-  			return Object.keys(data).map(function (key) { return data[key]; });
+		var pcolor = {
+			category : colorCenter(), //color of the category
+		    opacity : 0.8,
+		    fontColor: colorCenterFont(),
+		    bySeries : { //this color scheme repeats the same color for the same series
+		        data1  : {
+		          color : colorData1(),
+		          opacity : 0.8,
+		          fontColor: colorDataFont1(),
+		        },
+		        data2 : {
+		          color: colorData2(),
+		          opacity: 0.8,
+		          fontColor: colorDataFont2()
+		        }
+		    }
 		}
-		var newData = valuesToArray(data);
-		console.log(newData);
-		
-		Raphael("chart", paperWidth, paperHeight)
-		    .coxCombChart(paperWidth / 2,paperHeight / 2, paperHeight / 2, data, properties);
+		//console.log(pcolor);
+
+		var dataT = {}, cart = {},
+		nbData = data.length;
+		for (i = 0; i < nbData; i++){
+			cart[data[i].categorie] = {};
+			cart[data[i].categorie] = {data1:data[i].data1, data2:data[i].data2};
+		}
+
+		dataSet = {data:cart, colors:pcolor};
+
+
+		var paperWidth = chartWidth.value;
+	  	var paperHeight = paperWidth * 0.8;
+	  	Raphael("chart", paperWidth, paperHeight)
+	          .coxCombChart(paperWidth / 2,paperHeight / 2, paperHeight / 2, dataSet, properties);
 		})
 
 })();

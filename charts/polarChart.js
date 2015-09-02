@@ -61,11 +61,12 @@
 		.title('Width(only the chart)')
 		.defaultValue(300)
 
-
-	// var colors1 = chart.color()
-	// 	.title("Color Data1")
-	// 	.defaultValue("#D90009")
-
+	// var nbList = list().length;
+	// for (i = 0; i < nbList; i++){			
+	// 	var colors1 = chart.color()
+	// 		.title("Color Data1")
+	// 		.defaultValue("#D90009")
+	// }
 
 
 
@@ -89,6 +90,8 @@
 			});
 
 			dataSeries = [{
+				type: 'column',
+				pointPlacement: 'on',
 				name: nameList,
 				data: dataSeries // DYNAMIC
   			}];
@@ -102,6 +105,8 @@
                 var element = {};
                 element['name'] = l;
                 element['data'] = [];
+                element['type'] = 'column';
+                element['pointPlacement'] = 'on';
                 for (i = 0; i < nbData; i++){
                 	element['data'].push(parseInt(data[i].dimensions[e]));
                 }
@@ -110,11 +115,15 @@
 		}
 		
 		// series: [{
-          //     name: 'Mortcateg1',
-          //     data: [12, 11, 1]
+	      //       type: 'column',
+	      //       name: 'Jour malade',
+	      //       data: [1, 8, 5],
+	      //       pointPlacement: 'on'
           // }, {
-          //     name: 'Mortcateg2',
-          //     data: [8, 5, 3]
+	      //       type: 'column',
+	      //       name: 'Jour Autre',
+	      //       data: [10, 7, 0],
+	      //       pointPlacement: 'on'
           // },
 
 		window.chart = new Highcharts.Chart({    
@@ -134,6 +143,12 @@
 			    	return 'La valeur pour <b>'+this.x+'</b> est <b>'+this.y+'</b>';
 				}
 			},
+		    plotOptions: {
+        	    column: {
+		            pointPadding: 0,
+		            groupPadding: 0
+		        }
+		    }, 
 			xAxis: {
 				categories: dataCategories, // DYNAMIC
 				tickmarkPlacement: 'on',

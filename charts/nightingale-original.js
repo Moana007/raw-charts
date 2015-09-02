@@ -399,7 +399,6 @@
 	var data2 = model.dimension() 
 		.title('Données 2')
 		.types(Number)
-		.required(1);
 
 	// Valeur de la 3eme donnée
 	var data3 = model.dimension() 

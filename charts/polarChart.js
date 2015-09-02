@@ -18,12 +18,6 @@
         .types(Number)
         .required(1);
 
-	// Valeur d'une donnée
-	// var data1 = model.dimension() 
-	// 	.title('Données 1')
-	// 	.types(Number)
-
-
 	// --- Mapping function ---
 	model.map(function (data){
 		if (!list()) return;
@@ -36,12 +30,6 @@
             })
 			return obj;
 		})
-		// return data.map(function (d){
-		// 	return {
-		// 		categ : categ(d),
-		// 		data1 : +data1(d)
-		// 	}
-		// })
 	})
 
 
@@ -51,7 +39,7 @@
 	// -----------------
 	var chart = raw.chart()
 		.title("Polar Column")
-		.description("Simple representation of a polar column")
+		.description("Simple representation of a polar column.<br><a href='http://www.highcharts.com/docs/chart-and-series-types/polar-chart'>http://www.highcharts.com/docs/chart-and-series-types/polar-chart</a><br><br><strong>DEBUG :</strong><br> - Redimensionnement du graphique ok, mais pas la taille du bloc !")
 		.thumbnail("imgs/polarChart.png")
 		.model(model)
 
@@ -63,18 +51,20 @@
 
 	// var nbList = list().length;
 	// for (i = 0; i < nbList; i++){			
-	// 	var colors1 = chart.color()
-	// 		.title("Color Data1")
+	// 	var colors1+"_"+i = chart.color()
+	// 		.title("Color Data"+i)
 	// 		.defaultValue("#D90009")
 	// }
 
 
-
 	// --- Drawing function ---
 	chart.draw(function (selection, data){
+
 		selection
-			.attr("width", chartWidth())
+			.attr("width", chartWidth.value)
 			.attr("height", "500px")
+
+		$('.highcharts-container').css("width", chartWidth.value);
 		
 		var dataCategories = [], dataSeries = [],
 		nbData = data.length;
@@ -93,7 +83,7 @@
 				type: 'column',
 				pointPlacement: 'on',
 				name: nameList,
-				data: dataSeries // DYNAMIC
+				data: dataSeries
   			}];
 		}
 		else {
@@ -114,17 +104,6 @@
             })
 		}
 		
-		// series: [{
-	      //       type: 'column',
-	      //       name: 'Jour malade',
-	      //       data: [1, 8, 5],
-	      //       pointPlacement: 'on'
-          // }, {
-	      //       type: 'column',
-	      //       name: 'Jour Autre',
-	      //       data: [10, 7, 0],
-	      //       pointPlacement: 'on'
-          // },
 
 		window.chart = new Highcharts.Chart({    
 			chart: {
@@ -132,6 +111,9 @@
 				polar: true,
 				type: 'bar'
 			},
+			credits: {
+      			enabled: false
+  			},
 			title: {
 				text: '',
 			},
@@ -150,7 +132,7 @@
 		        }
 		    }, 
 			xAxis: {
-				categories: dataCategories, // DYNAMIC
+				categories: dataCategories,
 				tickmarkPlacement: 'on',
 				lineWidth: 0
 			},
@@ -158,7 +140,7 @@
 				lineWidth: 0,
 				min: 0,
 			},           
-			series: dataSeries // DYNAMIC
+			series: dataSeries
 
       	});
 	

@@ -43,11 +43,15 @@
 
 			selection.each( function( data ) {
 				//CUSTUM			
-				var listeStrings = []
+				var listeStrings = [], listeData1 = [], listeData2 = [], listeData3 = []
 				for (i = 0; i < data.length; i++) {
 				   listeStrings[i] = data[i].dataTotal;
+				   listeData1[i] = data[i].data1;
+				   listeData2[i] = data[i].data2;
+				   listeData3[i] = data[i].data3;
 				}
-
+				allListe = [listeStrings, listeData1, listeData2, listeData3];
+				//console.log(allListe);
 				// Determine the number of wedges:
 				numWedges = data.length;
 
@@ -61,7 +65,7 @@
 				createBase( this );
 
 				// Create the wedges:
-				createWedges( data, listeStrings );
+				createWedges( data, allListe );
 
 			});
 
@@ -70,11 +74,12 @@
 		//
 		function formatData( data ) {
 			// Convert data to standard representation; needed for non-deterministic accessors:
+			console.log(data);
 			data = data.map( function(d, i) {
 				return {
 					'angle': angle.call(data, d, i),
 					'area': area.call(data, d, i),
-					'label': label.call(data, d, i)			
+					'label': label.call(data, d, i)		
 				};
 			});
 
@@ -125,7 +130,7 @@
 		}; // end FUNCTION createBase()
 
 
-		function createWedges( data, maxValue ) {
+		function createWedges( data, allListe ) {
 			// Create the wedge groups:
 			wedgeGroups = graph.selectAll('.wedgeGroup')
 				.data( data )
@@ -157,8 +162,8 @@
 
 			//CUSTUM
 			var dataTotal;
-			for (i = 0; i < maxValue.length; i++) {
-				dataTotal = maxValue[i];
+			for (i = 0; i < allListe[0].length; i++) {
+				dataTotal = allListe[0][i];
 			}
 			// Append title tooltips:
 			wedges.append('svg:title')
@@ -196,6 +201,11 @@
 			  	.attr('fill', 'none')
 			  	.attr('stroke', 'none');
 
+			// var data1;
+			// //for (i = 0; i < allListe[0].length; i++) {
+			// 	data1 = allListe[1][i];
+			// 	ii++;
+			// //}
 			wedgeGroups.selectAll('.label')
 				.data( function(d,i) { 
 					return [
@@ -215,7 +225,7 @@
 		  			.attr('xlink:href', function(d,i) { 
 		  				return '#label-path' + (d.index + numLabels);
 		  			})
-		  			.text( function(d) { return d.label; } );
+		  			.text( function(d, i) { return d.label+" - d1= "+allListe[1][d.index]/(1000*12/allListe[0][d.index])+", d2= "+allListe[2][d.index]/(1000*12/allListe[0][d.index])+", d3= "+allListe[3][d.index]/(1000*12/allListe[0][d.index]); });
 
 		}; // end FUNCTION createWedges()	
 
@@ -431,7 +441,7 @@
 	// -----------------
 	var chart = raw.chart()
 		.title("Nightingale Rose (Original)")
-		.description("Simple representation of an original history of Nightingale Rose")
+		.description("Simple representation of an original history of Nightingale Rose<br><a href='http://bl.ocks.org/kgryte/5926740'>http://bl.ocks.org/kgryte/5926740</a><br><br><strong>DEBUG :</strong><br> - Données du graphique affichées sur les cotés. -> Voir pour afficher la donnée directement dans le graphique.")
 		.thumbnail("imgs/nightingale-original.png")
 		.model(model)
 

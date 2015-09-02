@@ -37,6 +37,8 @@
 	var chart = raw.chart()
 		.title("Simple Scatter Plot")
 		.description("A simple chart for test")
+		.category("Correlations")
+		.thumbnail("imgs/chart.jpg")
 		.model(model)
 
 	// Some options we want to expose to the users

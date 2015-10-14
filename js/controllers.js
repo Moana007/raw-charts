@@ -12,7 +12,9 @@ angular.module('raw.controllers', [])
       { title : 'Music (flows)', url : 'data/flows.csv' },
       { title : 'Cocktails (correlations)', url : 'data/correlations.csv' },
       { title : 'Causes morts à l\'armée (Dév : Nightingale)', url : 'data/deathArmy.csv' },
-      { title : 'Causes morts en entreprises (Dév : Coxcomb)', url : 'data/pdmEntreprise.csv' }
+      { title : 'Causes morts en entreprises (Dév : Coxcomb)', url : 'data/pdmEntreprise.csv' },
+      { title : ' Réserves de pétroles (Dév : Cartogram Squares)', url : 'data/centroid-dataExemple.csv' },
+      { title : ' Model de données : Cartogram Squares', url : 'data/model-dataSquare-country.csv' }
     ]
 
     $scope.$watch('sample', function (sample){

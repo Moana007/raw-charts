@@ -32,7 +32,7 @@
 	// --- THE CHART ---
 	// -----------------
 	var chart = raw.chart()
-		.title("Sqares Cartogram")
+		.title("Squares Cartogram")
 		.description("This chart provides a <b>representation of data on a map as squares<b>. The squares are proportionals to their value. It bring out the data, regardless the size of the country..<br><a href='https://github.com/StudioV2/Demers_Cartogram_Example'>https://github.com/StudioV2/Demers_Cartogram_Example</a><br><br><strong>DEBUG :</strong><br> - Travail en cours...<br>")
 		.thumbnail("imgs/cartogramSquare.png")
 		.model(model)

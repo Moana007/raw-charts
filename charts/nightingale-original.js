@@ -389,7 +389,7 @@
 
 	// Valeur total d'une part  	
 	var dataTotal = model.dimension() 
-		.title('Total d\'une part (donnée 1 + donnée 2 + le reste)')
+		.title('Total de l\'ensemble')
 		.types(Number)
 		.required(1);
 

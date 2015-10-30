@@ -8,12 +8,12 @@
 
 	// Valeur total d'une part  	
 	var categ = model.dimension() 
-		.title('Catégorie de donnée (label)')
+		.title('Catégorie de données (Label)')
 		.types(String)
 		.required(1);
 
 	var list = model.dimension()
-        .title('Dimensions')
+        .title('Données (Multiples)')
         .multiple(true)
         .types(Number)
         .required(1);

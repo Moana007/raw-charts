@@ -39,7 +39,8 @@
 	// -----------------
 	var chart = raw.chart()
 		.title("Polar Column")
-		.description("Simple representation of a polar column.<br><a href='http://www.highcharts.com/docs/chart-and-series-types/polar-chart'>http://www.highcharts.com/docs/chart-and-series-types/polar-chart</a><br><br><strong>DEBUG :</strong><br> - Redimensionnement du graphique ok, mais pas la taille du bloc !")
+		.description("Simple representation of a polar column.<br><a href='http://www.highcharts.com/docs/chart-and-series-types/polar-chart'>http://www.highcharts.com/docs/chart-and-series-types/polar-chart</a><br><br><strong>DEBUG :</strong><br> - Redimensionnement du graphique ok, mais pas la taille du bloc !<br><br>Exemple: Yes<br><img src='imgs/exemples/exemple_polarColumn.png' class='img-exemple'>")
+		.thumbnail("imgs/cartogramAnamorphose.png")
 		.thumbnail("imgs/polarChart.png")
 		.model(model)
 

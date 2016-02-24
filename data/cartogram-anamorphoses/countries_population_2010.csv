@@ -1,0 +1,217 @@
+CountryCode,CountryName,Population
+BD,Bangladesh,151125
+WF,Wallis and Futuna,14
+BF,Burkina Faso,15540
+BG,Bulgaria,7389
+BA,Bosnia and Herzegovina,3846
+BB,Barbados,280
+BE,Belgium,10941
+BN,Brunei,401
+BO,Bolivia,10157
+JP,Japan,127353
+BI,Burundi,9233
+BJ,Benin,9510
+BT,Bhutan,717
+JM,Jamaica,2741
+BW,Botswana,1969
+WS,Samoa,186
+BR,Brazil,195210
+CR,Costa Rica,4670
+BY,Belarus,9491
+BZ,Belize,309
+RU,Russia,143618
+RW,Rwanda,10837
+RS,Serbia,9647
+LT,Lithuania,3068
+RE,Réunion,845
+LU,Luxembourg,508
+TJ,Tajikistan,7627
+RO,Romania,21861
+TK,Tokelau,1
+GW,Guinea-Bissau,1587
+GU,Guam,159
+GT,Guatemala,14342
+GR,Greece,11110
+GQ,Equatorial Guinea,696
+GP,Guadeloupe,459
+BH,Bahrain,1252
+GY,Guyana,786
+GF,French Guiana,231
+GE,Georgia,4389
+GB,United Kingdom,62066
+GA,Gabon,1556
+GN,Guinea,10876
+GM,Gambia,1681
+GL,Greenland,57
+GH,Ghana,24263
+OM,Oman,2803
+TN,Tunisia,10632
+JO,Jordan,6455
+HR,Croatia,4338
+BS,Bahamas,360
+HT,Haiti,9896
+HU,Hungary,10015
+HK,Hong Kong,7050
+HN,Honduras,7621
+PR,Puerto Rico,3710
+PS,Palestine,4013
+PW,Palau,20
+PT,Portugal,10590
+PY,Paraguay,6460
+PA,Panama,3678
+PF,French Polynesia,268
+PG,Papua New Guinea,6859
+PE,Peru,29263
+PK,Pakistan,173149
+PH,Philippines,93444
+PL,Poland,38199
+ZM,Zambia,13217
+EE,Estonia,1299
+EG,Egypt,78076
+ZA,South Africa,51452
+EC,Ecuador,15001
+AL,Albania,3150
+VN,Vietnam,89047
+KZ,Kazakhstan,15921
+ET,Ethiopia,87095
+ZW,Zimbabwe,13077
+ES,Spain,46182
+ER,Eritrea,5741
+MD,Moldova,3573
+MG,Madagascar,21080
+MA,Morocco,31642
+UZ,Uzbekistan,27769
+MM,Myanmar [Burma],51931
+ML,Mali,13986
+MN,Mongolia,2713
+MH,Marshall Islands,52
+US,United States,312247
+MU,Mauritius,1231
+MT,Malta,425
+MW,Malawi,15014
+MV,Maldives,326
+MP,Northern Mariana Islands,54
+MR,Mauritania,3609
+IM,Isle of Man,84
+UG,Uganda,33987
+MY,Malaysia,28276
+MX,Mexico,117886
+IL,Israel,7420
+FR,France,63231
+FI,Finland,5368
+FJ,Fiji,861
+FM,Micronesia,104
+NI,Nicaragua,5822
+NL,Netherlands,16615
+NO,Norway,4891
+NA,Namibia,2179
+NC,New Caledonia,246
+NE,Niger,15894
+NF,Norfolk Island,0
+NG,Nigeria,159708
+NZ,New Zealand,4368
+NP,Nepal,26846
+NR,Nauru,10
+NU,Niue,1
+CK,Cook Islands,20
+XK,Kosovo,0
+CI,Ivory Coast,18977
+CH,Switzerland,7831
+CO,Colombia,46445
+CN,China,1359821
+CM,Cameroon,20624
+CL,Chile,17151
+CA,Canada,34126
+CG,Republic of the Congo,4112
+CF,Central African Republic,4350
+CD,Democratic Republic of the Congo,62191
+CZ,Czechia,10554
+CY,Cyprus,1104
+UY,Uruguay,3372
+CW,Curacao,148
+CV,Cape Verde,488
+CU,Cuba,11282
+SZ,Swaziland,1193
+SY,Syria,21533
+KG,Kyrgyzstan,5334
+KE,Kenya,40909
+SS,South Sudan,9941
+SR,Suriname,525
+KI,Kiribati,98
+KH,Cambodia,14365
+SV,El Salvador,6218
+KM,Comoros,683
+ST,São Tomé and Príncipe,178
+SK,Slovakia,5433
+KR,South Korea,48454
+SI,Slovenia,2054
+SO,Somalia,9636
+SN,Senegal,12951
+SL,Sierra Leone,5752
+SC,Seychelles,91
+SB,Solomon Islands,526
+SA,Saudi Arabia,27258
+SG,Singapore,5079
+SE,Sweden,9382
+SD,Sudan,35652
+DO,Dominican Republic,10017
+DM,Dominica,71
+DK,Denmark,5551
+DE,Germany,83017
+YE,Yemen,22763
+AT,Austria,8402
+DZ,Algeria,37063
+MK,Macedonia,2102
+YT,Mayotte,204
+TZ,Tanzania,44973
+LC,Saint Lucia,177
+LA,Laos,6396
+TV,Tuvalu,10
+TW,Taiwan,23146
+TT,Trinidad and Tobago,1328
+TR,Turkey,72138
+LK,Sri Lanka,20759
+LV,Latvia,2091
+TO,Tonga,104
+TL,East Timor,1079
+TM,Turkmenistan,5042
+LR,Liberia,3958
+LS,Lesotho,2009
+TH,Thailand,66402
+TG,Togo,6306
+TD,Chad,11721
+TC,Turks and Caicos Islands,31
+LY,Libya,6041
+VA,Vatican City,1
+VC,Saint Vincent and the Grenadines,109
+AE,United Arab Emirates,8442
+VE,Venezuela,29043
+AG,Antigua and Barbuda,87
+AF,Afghanistan,28398
+IQ,Iraq,30962
+VI,U.S. Virgin Islands,106
+IS,Iceland,318
+IR,Iran,74462
+AM,Armenia,2963
+IT,Italy,60509
+AO,Angola,19549
+AR,Argentina,40374
+AU,Australia,22404
+VU,Vanuatu,236
+IN,India,1205625
+AZ,Azerbaijan,9095
+IE,Ireland,4468
+ID,Indonesia,240676
+UA,Ukraine,46050
+MZ,Mozambique,23967
+-99,Null,0
+AQ,Antarctica,0
+TF,French Southern Territories,0
+DJ,Djibouti,834
+FK,Falkland Islands,3
+KW,Kuwait,2992
+ME,Montenegro,620
+KP,North Korea,24501
+QA,Qatar,1750
+EH,Western Sahara,515
+LB,Lebanon,4341

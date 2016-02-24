@@ -1084,3 +1084,21 @@ pre.CodeMirror-placeholder {
    background-repeat: no-repeat;
    opacity: .3;
 }
+
+
+/* -------------------- -------------------- -------------------- -------------------- */
+/* -------------------- ------------ CUSTOM STUDIO V2 ----------- -------------------- */
+/* -------------------- -------------------- -------------------- -------------------- */
+.simpleListeData { padding-left:20px;}
+.titleListeData { font-weight: bold; padding-left:0px;}
+.titleListeData.lvl1 {text-decoration:underline;}
+
+.dimensionNameStyle { font-size: 0.7em; color:#888; }
+.img-exemple {width: 100%; display: none;}
+
+.txt-showExemple {cursor:pointer; color:#888; display: none; }
+.txt-showExemple:hover {color:#5A5E5A; }
+
+.image_exemple_show {width: 90%; border:2px solid #888; -webkit-box-shadow: 10px 10px 9px 1px rgba(0,0,0,0.27); -moz-box-shadow: 10px 10px 9px 1px rgba(0,0,0,0.27); box-shadow: 10px 10px 9px 1px rgba(0,0,0,0.27); }
+#block_exemple { height: auto; text-align: center; display: none; margin:10px 0px 35px; }
+

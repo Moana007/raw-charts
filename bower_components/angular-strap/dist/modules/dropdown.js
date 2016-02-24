@@ -14,7 +14,7 @@ angular.module('mgcrea.ngStrap.dropdown', ['mgcrea.ngStrap.tooltip']).provider('
       template: 'dropdown/dropdown.tpl.html',
       trigger: 'click',
       container: false,
-      keyboard: true,
+      keyboard: false,
       html: false,
       delay: 0
     };

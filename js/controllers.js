@@ -7,14 +7,25 @@ angular.module('raw.controllers', [])
   .controller('RawCtrl', function ($scope, dataService) {
 
     $scope.samples = [
-      { title : 'Cars (multivariate)', url : 'data/multivariate.csv' },
-      { title : 'Movies (dispersions)', url : 'data/dispersions.csv' },
-      { title : 'Music (flows)', url : 'data/flows.csv' },
-      { title : 'Cocktails (correlations)', url : 'data/correlations.csv' },
-      { title : 'Causes morts à l\'armée (Dév : Nightingale)', url : 'data/deathArmy.csv' },
-      { title : 'Causes morts en entreprises (Dév : Coxcomb)', url : 'data/pdmEntreprise.csv' },
-      { title : ' Réserves de pétroles (Dév : Cartogram Squares)', url : 'data/centroid-dataExemple.csv' },
-      { title : ' Model de données : Cartogram Squares', url : 'data/model-dataSquare-country.csv' }
+      { title : '<span class="titleListeData lvl1">DEFAULTS :</span>'},
+      { title : '<span class="simpleListeData">Cars (multivariate)</span>', url : 'data/multivariate.csv' },
+      { title : '<span class="simpleListeData">Movies (dispersions)</span>', url : 'data/dispersions.csv' },
+      { title : '<span class="simpleListeData">Music (flows) (+Streamgraph)</span>', url : 'data/flows.csv' },
+      { title : '<span class="simpleListeData">Cocktails (correlations) (+Circle Packing)</span>', url : 'data/correlations.csv' },
+      { title : '<span class="titleListeData lvl1">CUSTOMS :</span>'},
+      { title : '<span class="simpleListeData">Causes morts à l\'armée (Nightingale)</span>', url : 'data/deathArmy.csv' },
+      { title : '<span class="simpleListeData">Causes morts en entreprises (CoxCombChart)</span>', url : 'data/pdmEntreprise.csv' },
+      { title : '<span class="titleListeData lvl2">Squares Cartogram :</span>'},
+      { title : '<span class="simpleListeData">Réserves de pétroles (Squares cartogram )</span>', url : 'data/cartogram-squares/centroid-dataExemple.csv' },
+      { title : '<span class="simpleListeData">Modèle de données : Squares cartogram </span>', url : 'data/cartogram-squares/model-dataSquare-country.csv' },
+      { title : '<span class="titleListeData lvl2">Anamorphose :</span>'},
+      { title : '<span class="simpleListeData">Ventes motos Leboncoin jusqu\'à jan 2013 (Anamorphose cartogram: FR)</span>', url : 'data/cartogram-anamorphoses/achatMotosLeboncoin.csv' },
+      { title : '<span class="simpleListeData">Population mondiale 2010 (Anamorphose cartogram: Monde)</span>', url : 'data/cartogram-anamorphoses/countries_population_2010.csv' },
+      { title : '<span class="titleListeData lvl2">Bubble Map :<span>'},
+      { title : '<span class="simpleListeData">Population mondiale 2013 (Bubble Map: Monde)</span>', url : 'data/bubbleMap/countries_population_2013.csv' },
+      { title : '<span class="simpleListeData">Modèle de données : Bubble Map France (Départements)</span>', url : 'data/bubbleMap/model-bubbleMap.csv' },
+      { title : '<span class="simpleListeData">Modèle de données : Bubble Map France (Régions 2016)</span>', url : 'data/bubbleMap/model-bubbleMap-fr-regions.csv' }
+      
     ]
 
     $scope.$watch('sample', function (sample){
@@ -72,6 +83,7 @@ angular.module('raw.controllers', [])
     $scope.chart = $scope.charts[0];
     $scope.model = $scope.chart ? $scope.chart.model() : null;
 
+
     $scope.$watch('error', function (error){
       if (!$('.CodeMirror')[0]) return;
       var cm = $('.CodeMirror')[0].CodeMirror;
@@ -93,6 +105,15 @@ angular.module('raw.controllers', [])
       })
     })
 
+    //A COMMENTER
+    // $('button[ng-model=sample]').on('mouseup', function(){
+    //   $('a','ul[role=select]').on('click', function(){
+    //     $('.dimensionName').text($(this).text());
+    //   })
+    // })
+
+    
+
     $scope.codeMirrorOptions = {
       lineNumbers : true,
       lineWrapping : true,
@@ -101,10 +122,36 @@ angular.module('raw.controllers', [])
 
     $scope.selectChart = function(chart){
       if (chart == $scope.chart) return;
+      
+      setTimeout(function(){ 
+        var imgExemple_url = $('.img-exemple').attr('src');
+        if (imgExemple_url != undefined) {
+          $('#block_exemple .image_exemple_show').attr('src', imgExemple_url);
+          $('.txt-showExemple').show();
+        } else {
+          $('#block_exemple .image_exemple_show').attr('src', '#');
+          $('.txt-showExemple').hide();
+          // ENLEVER BTN 'Show data exemple'
+        }
+      }, 500);
+
+      $("#block_exemple").hide();
+      $(".hide-show").text('Show');
+
       $scope.model.clear();
       $scope.chart = chart;
       $scope.model = $scope.chart.model();
     }
+    // Slide block exemple
+    $('.txt-showExemple').on('click', function(){
+      $("#block_exemple").slideToggle("slow");
+      var hideShow = $(".hide-show");
+      if(hideShow.text() == 'Show'){
+        hideShow.text('Hide');
+      } else {
+        hideShow.text('Show');
+      } 
+    })
 
     function refreshScroll(){
       $('[data-spy="scroll"]').each(function () {

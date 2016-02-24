@@ -283,7 +283,8 @@
 	// -----------------
 	var chart = raw.chart()
 		.title("CoxComb Chart")
-		.description("It's slightly modified from the original Nightingale Rose, since it doesn't display the bars stacked but side by side. It's better to display superposed labels that way.<br><a href='https://github.com/guilespi/coxcomb-chart'>https://github.com/guilespi/coxcomb-chart</a><br><br><strong>DEBUG :</strong><br> - Bug de couleur (quand l'utilisateur utilise l'interface).<br> - Afficher les données sur le graphe")
+		.description("It's slightly modified from the original Nightingale Rose, since it doesn't display the bars stacked but side by side. It's better to display superposed labels that way.<br><a href='https://github.com/guilespi/coxcomb-chart'>https://github.com/guilespi/coxcomb-chart</a><br><br><strong>DEBUG :</strong><br> - Bug de couleur (quand l'utilisateur utilise l'interface).<br> - Afficher les données sur le graphe.<br> - Voir la cohérence des données + ordre d'affichage (sort())<br><br>Exemple: Yes<br><img src='imgs/exemples/exemple_coxCombChart.png' class='img-exemple'>")
+		.thumbnail("imgs/cartogramAnamorphose.png")
 		.thumbnail("imgs/coxCombChart.png")
 		.model(model)
 

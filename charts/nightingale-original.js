@@ -441,7 +441,8 @@
 	// -----------------
 	var chart = raw.chart()
 		.title("Nightingale Rose (Original)")
-		.description("Simple representation of an original history of Nightingale Rose<br><a href='http://bl.ocks.org/kgryte/5926740'>http://bl.ocks.org/kgryte/5926740</a><br><br><strong>DEBUG :</strong><br> - Données du graphique affichées sur les cotés. -> Voir pour afficher la donnée directement dans le graphique.")
+		.description("Simple representation of an original history of Nightingale Rose<br><a href='http://bl.ocks.org/kgryte/5926740'>http://bl.ocks.org/kgryte/5926740</a><br><br><strong>DEBUG :</strong><br> - Données du graphique affichées sur les cotés. -> Voir pour afficher la donnée directement dans le graphique.<br><br>Exemple: Yes<br><img src='imgs/exemples/exemple_nightingale.png' class='img-exemple'>")
+		.thumbnail("imgs/cartogramAnamorphose.png")
 		.thumbnail("imgs/nightingale-original.png")
 		.model(model)
 

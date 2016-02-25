@@ -389,30 +389,30 @@
 
 	// Valeur total d'une part  	
 	var dataTotal = model.dimension() 
-		.title('Total de l\'ensemble')
+		.title('Total dimensions')
 		.types(Number)
 		.required(1);
 
 	// angle/ordre/centre (=date)
 	var  dataAngle = model.dimension() 
-		.title('Catégories (Label)')
+		.title('Categories (label)')
 		.types(String)
 		.required(1);
 
 	// Valeur d'une donnée
 	var data1 = model.dimension() 
-		.title('Données 1')
+		.title('Dimension 1')
 		.types(Number)
 		.required(1);
 
 	// Valeur de la 2eme donnée 
 	var data2 = model.dimension() 
-		.title('Données 2')
+		.title('Dimension 2')
 		.types(Number)
 
 	// Valeur de la 3eme donnée
 	var data3 = model.dimension() 
-		.title('Données 3')
+		.title('Dimension 3')
 		.types(Number)
 
 

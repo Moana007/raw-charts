@@ -8,12 +8,12 @@
 
 	// Valeur total d'une part  	
 	var countryCode = model.dimension() 
-		.title('Code pays')
+		.title('Country code')
 		.types(String)
 		.required(1);
 
 	var countryData1 = model.dimension()
-        .title('Données')
+        .title('Dimension')
         .types(Number)
         .required(1);
 
@@ -68,10 +68,13 @@
 	chart.draw(function (selection, data){
 
 
+		$('h3#options').replaceWith('<h3 id="options">Customize your Visualization<br><span id="wrong-map">If the data does not appear, check that you have chosen the right base map options.</span></h3>');
+
 		var chartHeight = chartWidth.value*(400/600),
 			map = selection
 				.attr("width", chartWidth())	
 				.attr("height", chartHeight);
+
 		$('.highcharts-container').css("width", chartWidth.value);
 		$('.highcharts-container').css("width", chartHeight);
 
@@ -120,7 +123,7 @@
             },
             tooltip : {
 				formatter: function () {
-			    	return 'La valeur pour <b>'+this.key+'</b> est <b>'+this.point.z+'</b>';
+			    	return 'The value for <b>'+this.key+'</b> is <b>'+this.point.z+'</b>';
 				}
 			},
             series : [{

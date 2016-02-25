@@ -7,13 +7,13 @@
 	var model = raw.model();
 
 	var  idCountry = model.dimension() 
-		.title('Id du pays')
+		.title('Country id')
 		.types(Number)
 		.required(1);
 
 	// Valeur d'une donnée
 	var data1 = model.dimension() 
-		.title('Données')
+		.title('Dimension')
 		.types(Number)
 		.required(1);
 
@@ -33,7 +33,7 @@
 	// -----------------
 	var chart = raw.chart()
 		.title("Squares Cartogram")
-		.description("This chart provides a <b>representation of data on a map as squares</b>. The squares are proportionals to their value. It bring out the data, regardless the size of the country..<br><a href='https://github.com/StudioV2/Demers_Cartogram_Example'>https://github.com/StudioV2/Demers_Cartogram_Example</a><br><br><strong>DEBUG :</strong><br> - Pouvoir gérer les couleurs ?<br><br>Exemple: Yes<br><img src='imgs/exemples/exemple_squaresCartogram.png' class='img-exemple'>")
+		.description("This chart provides a <b>representation of data on a map as squares</b>. The squares are proportionals to their value. It bring out the data, regardless the size of the country..<br><a href='https://github.com/StudioV2/Demers_Cartogram_Example'>https://github.com/StudioV2/Demers_Cartogram_Example</a><br><br><strong>DEBUG :</strong><br> - Can manage color ?<br><br>Exemple: Yes<br><img src='imgs/exemples/exemple_squaresCartogram.png' class='img-exemple'>")
 		.thumbnail("imgs/cartogramAnamorphose.png")
 		.thumbnail("imgs/cartogramSquare.png")
 		.model(model)

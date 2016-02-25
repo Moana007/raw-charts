@@ -6,17 +6,17 @@
   var model = raw.model();
 
   var  dataCountryCode = model.dimension() 
-    .title('Code du pays')
+    .title('Country code')
     .types(String)
     .required(1);
 
   var  dataCountryName = model.dimension() 
-    .title('Nom du pays')
+    .title('Country name')
     .types(String)
     .required(1);
 
   var dataPopulation = model.dimension() 
-    .title('Données')
+    .title('Dimension')
     .types(Number)
     .required(1);
 

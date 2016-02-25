@@ -243,19 +243,19 @@
 
 
 	var  categorie = model.dimension() 
-		.title('Catégories/label')
+		.title('Categories/Label')
 		.types(String)
 		.required(1);
 
 	// Valeur d'une donnée
 	var data1 = model.dimension() 
-		.title('Données 1')
+		.title('Dimension 1')
 		.types(Number)
 		.required(1);
 
 	// Valeur de la 2eme donnée 
 	var data2 = model.dimension() 
-		.title('Données 2')
+		.title('Dimension 2')
 		.types(Number)
 		.required(1);
 
@@ -301,27 +301,27 @@
 
 	//COLOR
 		var colorCenter = chart.color()
-			.title("Couleur du centre")
+			.title("Color center")
 			.defaultValue("#2B2B2B")
 
 		var colorCenterFont = chart.color()
-			.title("Couleur de la police central")
+			.title("Color font center")
 			.defaultValue("#fff")
 
 		var colorData1 = chart.color()
-			.title("Couleur de la donnée 1")
+			.title("Color dimension 1")
 			.defaultValue("#E9E581")
 
 		var colorData2 = chart.color()
-			.title("Couleur de la donnée 2")
+			.title("Color dimension 2")
 			.defaultValue("#DE1B1B")
 
 		var colorDataFont1 = chart.color()
-			.title("Couleur de la police de la donnée 1")
+			.title("Color font dimension 1")
 			.defaultValue("#000")
 
 		var colorDataFont2 = chart.color()
-			.title("Couleur de la police de la donnée 2")
+			.title("Color font dimension 2")
 			.defaultValue("#fff")
 
 	// --- Drawing function ---

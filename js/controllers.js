@@ -15,6 +15,7 @@ angular.module('raw.controllers', [])
       { title : '<span class="titleListeData lvl1">CUSTOMS :</span>'},
       { title : '<span class="simpleListeData">Causes morts à l\'armée (Nightingale)</span>', url : 'data/deathArmy.csv' },
       { title : '<span class="simpleListeData">Causes morts en entreprises (CoxCombChart)</span>', url : 'data/pdmEntreprise.csv' },
+      { title : '<span class="simpleListeData">Exportation dans le monde (Arc connection)</span>', url : 'data/exportation.csv' },
       { title : '<span class="titleListeData lvl2">Squares Cartogram :</span>'},
       { title : '<span class="simpleListeData">Réserves de pétroles (Squares cartogram )</span>', url : 'data/cartogram-squares/centroid-dataExemple.csv' },
       { title : '<span class="simpleListeData">Modèle de données : Squares cartogram </span>', url : 'data/cartogram-squares/model-dataSquare-country.csv' },
@@ -24,7 +25,7 @@ angular.module('raw.controllers', [])
       { title : '<span class="titleListeData lvl2">Bubble Map :<span>'},
       { title : '<span class="simpleListeData">Population mondiale 2013 (Bubble Map: Monde)</span>', url : 'data/bubbleMap/countries_population_2013.csv' },
       { title : '<span class="simpleListeData">Modèle de données : Bubble Map France (Départements)</span>', url : 'data/bubbleMap/model-bubbleMap.csv' },
-      { title : '<span class="simpleListeData">Modèle de données : Bubble Map France (Régions 2016)</span>', url : 'data/bubbleMap/model-bubbleMap-fr-regions.csv' }
+      { title : '<span class="simpleListeData">Modèle de données : Bubble Map France (Régions 2016)</span>', url : 'data/bubbleMap/model-bubbleMap-fr-regions.csv' },
       
     ]
 

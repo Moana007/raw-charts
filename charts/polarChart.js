@@ -8,12 +8,12 @@
 
 	// Valeur total d'une part  	
 	var categ = model.dimension() 
-		.title('Catégorie de données (Label)')
+		.title('Label')
 		.types(String)
 		.required(1);
 
 	var list = model.dimension()
-        .title('Données (Multiples)')
+        .title('Dimensions (Multiple)')
         .multiple(true)
         .types(Number)
         .required(1);
@@ -123,7 +123,7 @@
 			},
 			tooltip : {
 				formatter: function () {
-			    	return 'La valeur pour <b>'+this.x+'</b> est <b>'+this.y+'</b>';
+			    	return 'The value for <b>'+this.x+'</b> is <b>'+this.y+'</b>';
 				}
 			},
 		    plotOptions: {

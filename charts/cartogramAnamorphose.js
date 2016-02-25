@@ -6,18 +6,18 @@
 	var model = raw.model();
 
 	var  idCountry = model.dimension() 
-		.title('Id du pays')
+		.title('Country id')
 		.types(Number)
 		.required(1);
 
 	var  country = model.dimension() 
-		.title('Pays')
+		.title('Country')
 		.types(String)
 		.required(1);
 
 	// Valeur d'une donnée
 	var data1 = model.dimension() 
-		.title('Données')
+		.title('Dimension')
 		.types(Number)
 		.required(1);
 
@@ -66,7 +66,7 @@
 			.defaultValue(47);
 
 		var byPopulation = chart.checkbox()
-			.title('Ajuster les valeurs par habitants (Requiert des données dans "Population").')
+			.title('Adjust the values by population (Requires data in "Population")')
 			.defaultValue(false);
 
 
@@ -124,7 +124,7 @@
 			}
 			
 			if('function' != typeof(d3.cartogram)){
-				$('h3#options').replaceWith('<h3 id="options">Customize your Visualization<br><span style="color:red;">Un probléme est survenu. Merci de changer n\'importe quelle donnée/option pour recharger le graphique.</span></h3>');
+				$('h3#options').replaceWith('<h3 id="options">Customize your Visualization<br><span style="color:red;">A problem occurred. Thank you to change any data/option to reload the graph.</span></h3>');
 			} else {
 				$('h3#options').replaceWith('<h3 id="options">Customize your Visualization</h3>');
 			}

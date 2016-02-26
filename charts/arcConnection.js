@@ -162,7 +162,7 @@
 						return links[index].value;
 					}
 				})
-			    .event("mouseover", pv.Behavior.tipsy({gravity: "e", fade: true}));
+			    .event("mouseover", pv.Behavior.tipsy({gravity: "e", fade: false}));
 
 			arc.node.add(pv.Dot)
 			    .size(function(d) d.linkDegree + 4)

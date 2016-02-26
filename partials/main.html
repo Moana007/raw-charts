@@ -33,7 +33,7 @@
 		<div raw-table class="data-table" data-ng-show="dataView == 'table'"></div>
 
 		<div>
-			<div class="txt-ordre">The order data may affect some graphics! You can set your order by clicking on the title of a colone table (in table view), or by placing a new colone number in first position.</div>
+			<div class="txt-ordre">The data order may affect some graphics! You can set your order by clicking on the title of a colone table (in table view), or by placing a new colone number in first position.</div>
 			<div data-ng-show="!loading && !data.length && !error" class="alert"><i class="fa fa-hand-o-right breath-right"></i> Not sure how it works? <a href="http://raw.densitydesign.org/how-it-works/">Take a look at this video</a> or <a href="https://github.com/densitydesign/raw/wiki/FAQs">visit our FAQs</a></div>
 			<div data-ng-show="!loading && !error && data.length" class="alert alert-success"><i class="fa fa-thumbs-up breath-right"></i><strong>{{data.length}}</strong> records in your data have been successfully parsed!</div>
 			<div data-ng-show="error" class="alert alert-warning"><i class="fa fa-thumbs-down breath-right"></i><strong>Whoops!</strong> Please, check line {{error+1}}</div>

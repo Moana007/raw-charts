@@ -1103,3 +1103,21 @@ pre.CodeMirror-placeholder {
 #block_exemple { height: auto; text-align: center; display: none; margin:10px 0px 35px; }
 #wrong-map { display: block; font-size: 0.65em; color:#5A5E5A; margin:-20px 0;}
 .txt-ordre { display: block; font-size: 0.9em; color:#5A5E5A; margin-left:10px; }
+
+
+/* Login */
+#raw-nav {padding-bottom: 0!important;}
+#raw-nav .container {margin-bottom: 20px!important;}
+
+.log.out { display: none; }
+
+.container_log { margin:0px 0 -1px; display: none; width: 100%; background-color: #F5F5F5;}
+#box_login { position:relative; display: block; height: auto; margin:0 auto 0 auto; width:100%; max-width:500px; background-color: #fff; padding: 10px 0 20px;}
+
+#box_login h3 { color: #333; margin-bottom: 0;}
+#box_login .logHide { font-size: 1.5em; position: absolute; right: 25px; top:19px; cursor:pointer; color: #333;}
+#box_login label { color: #333;}
+#box_login input {border: 1px solid #888; margin-left:5px; margin-bottom: 10px; color:#888; border-radius: 5px;}
+#box_login button { color:#333;border: 1px solid #888; margin-top:10px; border-radius: 5px; margin-bottom:8px;}
+#box_login .logError {color:red;}
+

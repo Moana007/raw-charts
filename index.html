@@ -46,12 +46,28 @@
           <li><a href="https://github.com/densitydesign/raw/wiki/API-Reference">API Reference</a></li>
           <li><a href="https://github.com/densitydesign/raw/wiki/FAQs">FAQ</a></li>
           <li><a href="https://github.com/densitydesign/raw">Github</a></li>
-          <li><a target="_blank"href="http://wiki.studio-v2.com/doku.php/wiki:staff:raw#mise_a_jour">Mise à jour</a></li>
+          <!-- RESCTRICTION SUR UPDATE -->
+          <li><a target="_blank"href="http://wiki.studio-v2.com/doku.php/wiki:staff:raw#mise_a_jour">Update</a></li>
+          <!-- FIN RESCTRICTION -->
+          <li><a href="#" class="log in">Log In</a></li>
+          <li><a href="#" class="log out">Log Out</a></li>
         </ul>
       </div>
 
 
     </div>
+
+    <div class="container_log">
+      <div id="box_login">
+        <h3>Log In</h3>
+        <span  title="close" class="logHide">X</span>
+        <label>User: </label><input type="text" class="log_user"></input><br>
+        <label>Password: </label><input type="password" class="log_pwd"></input><br>
+        <button onclick="validLogin();" type='button' class="btn_login">Log In</button><br>
+        <span class="logError"></span>
+      </div>
+    </div>
+
   </nav>
 
   <div ng-view class="wrap"></div>
@@ -81,6 +97,7 @@
   <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="bower_components/jquery-ui/ui/minified/jquery-ui.min.js"></script>
   <script type="text/javascript" src="bower_components/jqueryui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+  <script type="text/javascript" src="js/jquery.cookie.js"></script>
   <!-- bootstrap -->
   <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="bower_components/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
@@ -107,11 +124,12 @@
   <script type="text/javascript" src="bower_components/chartjs/france-departements.js"></script>
   <script type="text/javascript" src="bower_components/chartjs/france-regions.js"></script>
 
-  
-  
+    
 
   <!-- raw -->
   <script type="text/javascript" src="lib/raw.js"></script>
+  <!-- login -->
+  <script type="text/javascript" src="js/auth.js"></script>
 
   <!-- charts -->
   <script src="charts/treemap.js"></script>
@@ -140,8 +158,15 @@
   <script src="charts/cartogramSquare.js"></script>
   <script src="charts/cartogramAnamorphose.js"></script>
   <script src="charts/cartogramAnamorphoseMonde.js"></script>
-  <script src="charts/bubbleMap.js"></script>
-  <script src="charts/arcConnection.js"></script>
+  <!-- <script src="charts/bubbleMap.js"></script> -->
+  <!-- <script src="charts/arcConnection.js"></script> -->
+
+  <script type="text/javascript">
+    getHiddenChart([
+      'charts/arcConnection.js',
+      'charts/bubbleMap.js'
+    ]);
+  </script>
 
  
 

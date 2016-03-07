@@ -24,6 +24,7 @@ $(document).ready(function(){
   if(connect){
     $('.log.out').css('display','block');
     $('.log.in').hide();
+    $('.menu_update').addClass('show_update');
   }
 });
 

@@ -124,7 +124,7 @@
 			nodes.reverse();
 			var lengthLinks = links.length;
 
-			console.log(links);
+			//console.log(links);
 
 			valMin = Math.min.apply(null, arrMin);
 			for(i3=0; i3 < lengthLinks; i3++){
@@ -144,7 +144,9 @@
 			        : b.group - a.group);
 
 			var i = 0;
-			var i2 = 0;
+			var i2 = 1;
+			var j = 0;
+			var tooltip = '';
 			arc.link.add(pv.Line)
 				.strokeStyle(function(){
 					return 'rgba(88,156,205,'+chartOpacity()+')';
@@ -156,11 +158,22 @@
 					// 	return 'rgba(88,156,205,0.5)';
 					// } else { i++; return 'gray'; }
 				})
-				.text(function(d){
-					var index = i2; i2++;
-					if(index < lengthLinks) {
-						return links[index].value;
+				//links[i].value : contient les valeurs a afficher 
+				// d contient les 5 nodes (x2 ?)
+				.text(function(d,i){
+					//console.log(i2%2);
+					
+					if (i2%2 == 1){
+						tooltip = (links[j].value/chartRatio())*valMin;
+						j++;
 					}
+					i2++;
+					return tooltip;
+					/*var index = i2; i2++;
+					if(index < lengthLinks) {
+						console.log('toto');
+						return links[index].value;
+					}*/
 				})
 			    .event("mouseover", pv.Behavior.tipsy({gravity: "e", fade: false}));
 

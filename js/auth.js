@@ -15,6 +15,12 @@ $('.logHide').on('click', function(){
   $(".container_log").slideToggle("fast");
 });
 
+$('#login_form input').keypress(function (e) {
+  if (e.which == 13) {
+    $(".btn_login").click()
+  }
+});
+
 
 // --- Functions login ---
 var pwdEncode = 'ef705ef6e10ee889df48616dc2cdf75ad24adbd5';
@@ -47,7 +53,7 @@ function getConnexion(){
     var Cuser = $.cookie('raw_user');
     var Cpwd = $.cookie('raw_pwd');
 
-    if( Cuser == 'studiov2' && Cpwd == pwdEncode) {
+    if(Cuser == 'studiov2' && Cpwd == pwdEncode) {
       return true;
     } else {
       return false;

@@ -59,9 +59,11 @@
       <div id="box_login">
         <h3>Log In</h3>
         <span  title="close" class="logHide">X</span>
-        <label>User: </label><input type="text" class="log_user"></input><br>
-        <label>Password: </label><input type="password" class="log_pwd"></input><br>
-        <button onclick="validLogin();" type='button' class="btn_login">Log In</button><br>
+        <form id="login_form">
+          <label>User: </label><input type="text" class="log_user"></input><br>
+          <label>Password: </label><input type="password" class="log_pwd"></input><br>
+          <button onclick="validLogin();" type='button' class="btn_login">Log In</button><br>
+        </form>
         <span class="logError"></span>
       </div>
     </div>

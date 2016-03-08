@@ -1099,10 +1099,10 @@ pre.CodeMirror-placeholder {
 .txt-showExemple {cursor:pointer; color:#888; display: none; }
 .txt-showExemple:hover {color:#5A5E5A; }
 
-.image_exemple_show {width: 90%; border:2px solid #888; -webkit-box-shadow: 10px 10px 9px 1px rgba(0,0,0,0.27); -moz-box-shadow: 10px 10px 9px 1px rgba(0,0,0,0.27); box-shadow: 10px 10px 9px 1px rgba(0,0,0,0.27); }
-#block_exemple { height: auto; text-align: center; display: none; margin:10px 0px 35px; }
+.image_exemple_show {width: 90%; border:2px solid #888; -webkit-box-shadow: 10px 10px 9px 1px rgba(0,0,0,0.27); -moz-box-shadow: 10px 10px 9px 1px rgba(0,0,0,0.27); box-shadow: 10px 10px 9px 1px rgba(0,0,0,0.27); cursor: pointer; }
+#block_exemple { height: auto; text-align: center; display: none; margin:10px 0px 45px; }
 #wrong-map { display: block; font-size: 0.65em; color:#5A5E5A; margin:-20px 0;}
-.txt-ordre { display: block; font-size: 0.9em; color:#5A5E5A; margin-left:10px; }
+.txt-ordre { display: block; font-size: 0.9em; color:#5A5E5A; margin:0 0 5px 10px; }
 
 
 /* Login */

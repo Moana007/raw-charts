@@ -17,7 +17,7 @@ angular.module('raw.controllers', [])
       { title : '<span class="simpleListeData">Causes morts en entreprises (CoxCombChart)</span>', url : 'data/pdmEntreprise.csv' },
       { title : '<span class="simpleListeData">Exportation dans le monde (Arc connection)</span>', url : 'data/exportation.csv' },
       { title : '<span class="titleListeData lvl2">Squares Cartogram :</span>'},
-      { title : '<span class="simpleListeData">Réserves de pétroles (Squares cartogram )</span>', url : 'data/cartogram-squares/centroid-dataExemple.csv' },
+      { title : '<span class="simpleListeData">Réserves de pétroles (Squares cartogram)</span>', url : 'data/cartogram-squares/centroid-dataExemple.csv' },
       { title : '<span class="simpleListeData">Modèle de données : Squares cartogram </span>', url : 'data/cartogram-squares/model-dataSquare-country.csv' },
       { title : '<span class="titleListeData lvl2">Anamorphose :</span>'},
       { title : '<span class="simpleListeData">Ventes motos Leboncoin jusqu\'à jan 2013 (Anamorphose cartogram: FR)</span>', url : 'data/cartogram-anamorphoses/achatMotosLeboncoin.csv' },
@@ -144,7 +144,7 @@ angular.module('raw.controllers', [])
       $scope.model = $scope.chart.model();
     }
     // Slide block exemple
-    $('.txt-showExemple').on('click', function(){
+    $('.txt-showExemple, .image_exemple_show').on('click', function(){
       $("#block_exemple").slideToggle("slow");
       var hideShow = $(".hide-show");
       if(hideShow.text() == 'Show'){
@@ -152,7 +152,9 @@ angular.module('raw.controllers', [])
       } else {
         hideShow.text('Show');
       } 
-    })
+    });
+    // $('.txt-showExemple').on('click', function(){
+    // image_exemple_show
 
     function refreshScroll(){
       $('[data-spy="scroll"]').each(function () {

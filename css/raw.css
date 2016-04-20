@@ -1089,7 +1089,7 @@ pre.CodeMirror-placeholder {
 /* -------------------- -------------------- -------------------- -------------------- */
 /* -------------------- ------------ CUSTOM STUDIO V2 ----------- -------------------- */
 /* -------------------- -------------------- -------------------- -------------------- */
-.simpleListeData { padding-left:20px;}
+.simpleListeData { padding-left:20px; margin-top: -10px!important; margin-bottom: -10px!important;}
 .titleListeData { font-weight: bold; padding-left:0px;}
 .titleListeData.lvl1 {text-decoration:underline;}
 
@@ -1122,3 +1122,13 @@ pre.CodeMirror-placeholder {
 #box_login .logError {color:red;}
 .menu_update { display: none!important;}
 .show_update { display: block!important;}
+
+/* --- Chord diagram + Chord diagramValue--- */
+/* tooltip */
+/*.tooltipChordDiagram { position: absolute; z-index: 10; visibility: hidden; top: 0; left: 0; color: #fff; background-color: rgba(0,0,0,.8); padding: 5px 10px; border-radius: 5px; }*/
+
+#circleChord path.chord { stroke: #000; }
+#tooltipChordDiagramValue { color: white; opacity: .9; background: #333; padding: 5px; border: 1px solid lightgrey; border-radius: 5px; position: absolute; z-index: 10; visibility: hidden; white-space: nowrap; pointer-events: none; }
+#circleChord circle { fill: none; pointer-events: all; }
+#circleChord path.group { fill-opacity: .8; }
+#circleChord:hover path.fadeChord { display: none; }

@@ -1,0 +1,8 @@
+name,relationship
+chord.Designers.Jean Marie,chord.Designer.Blandine/chord.ChiefManager.Michel
+chord.Designers.Blandine,chord.Developers.Guillaume/chord.Designer.Jean Marie
+chord.Developers.Sylvain,chord.Developers.Guillaume/chord.ChiefManager.Michel
+chord.Developers.Guillaume,chord.Developers.Sylvain/chord.Designer.Blandine
+chord.Developers.Sebastien,chord.ChiefManager.Michel
+chord.Redactors.Denis,chord.ChiefManager.Michel
+chord.ChiefManager.Michel,chord.Developers.Sylvain/chord.Developers.Sebastien/chord.Designer.Jean Marie/chord.Redactors.Denis

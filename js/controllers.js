@@ -13,6 +13,7 @@ angular.module('raw.controllers', [])
       { title : '<span class="simpleListeData">Music (flows) (+Streamgraph)</span>', url : 'data/flows.csv' },
       { title : '<span class="simpleListeData">Cocktails (correlations) (+Circle Packing)</span>', url : 'data/correlations.csv' },
       { title : '<span class="titleListeData lvl1">CUSTOMS :</span>'},
+      { title : '<span class="titleListeData lvl2">Divers :</span>'},
       { title : '<span class="simpleListeData">Causes morts à l\'armée (Nightingale)</span>', url : 'data/deathArmy.csv' },
       { title : '<span class="simpleListeData">Causes morts en entreprises (CoxCombChart)</span>', url : 'data/pdmEntreprise.csv' },
       { title : '<span class="simpleListeData">Exportation dans le monde (Arc connection)</span>', url : 'data/exportation.csv' },
@@ -26,6 +27,12 @@ angular.module('raw.controllers', [])
       { title : '<span class="simpleListeData">Population mondiale 2013 (Bubble Map: Monde)</span>', url : 'data/bubbleMap/countries_population_2013.csv' },
       { title : '<span class="simpleListeData">Modèle de données : Bubble Map France (Départements)</span>', url : 'data/bubbleMap/model-bubbleMap.csv' },
       { title : '<span class="simpleListeData">Modèle de données : Bubble Map France (Régions 2016)</span>', url : 'data/bubbleMap/model-bubbleMap-fr-regions.csv' },
+
+      { title : '<span class="titleListeData lvl2">Chord Diagram<span>'},
+      { title : '<span class="simpleListeData">Relation Employées (Chord diagram SANS valeur)</span>', url : 'data/relationEmployes.csv' },
+      { title : '<span class="simpleListeData">Imports Pays 1 (Chord diagram SANS valeur)</span>', url : 'data/importsCountry_chord1.csv' },
+      { title : '<span class="simpleListeData">Imports Pays 2 (Chord diagram SANS valeur)</span>', url : 'data/importsCountry_chord2.csv' },
+      { title : '<span class="simpleListeData">Imports Pays (Chord diagram AVEC valeur)</span>', url : 'data/importsCountryValue_chord1.csv' },
       
     ]
 

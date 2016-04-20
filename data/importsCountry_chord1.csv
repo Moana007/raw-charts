@@ -1,0 +1,11 @@
+name,relationship
+chord.Antigua & Barbuda.Antigua & Barbuda,chord.Argentina.Argentina/chord.Andorra.Andorra/chord.Austria.Austria/chord.Albania.Albania/chord.Armenia.Armenia/chord.Azerbaijan.Azerbaijan/chord.Angola.Angola/chord.Algeria.Algeria/chord.Afghanistan.Afghanistan/chord.Australia.Australia
+chord.Argentina.Argentina,chord.Andorra.Andorra/cord.Austria.Austria/chord.Albania.Albania/chord.Armenia.Armenia/chord.Azerbaijan.Azerbaijan/chord.Angola.Angola/chord.Algeria.Algeria/chord.Afghanistan.Afghanistan/chord.Australia.Australia
+chord.Andorra.Andorra,chord.Austria.Austria/chord.Albania.Albania/chord.Armenia.Armenia/chord.Azerbaijan.Azerbaijan/chord.Angola.Angola/chord.Algeria.Algeria/chord.Afghanistan.Afghanistan/chord.Australia.Australia
+chord.Austria.Austria,chord.Albania.Albania/chord.Armenia.Armenia/chord.Azerbaijan.Azerbaijan/chord.Angola.Angola/chord.Algeria.Algeria/chord.Afghanistan.Afghanistan/chord.Australia.Australia
+chord.Albania.Albania,chord.Armenia.Armenia/chord.Azerbaijan.Azerbaijan/chord.Angola.Angola/chord.Algeria.Algeria/chord.Afghanistan.Afghanistan/chord.Australia.Australia
+chord.Armenia.Armenia,chord.Azerbaijan.Azerbaijan/chord.Angola.Angola/chord.Algeria.Algeria/chord.Afghanistan.Afghanistan/chord.Australia.Australia
+chord.Azerbaijan.Azerbaijan,chord.Angola.Angola/chord.Algeria.Algeria/chord.Afghanistan.Afghanistan/chord.Australia.Australia
+chord.Angola.Angola,chord.Algeria.Algeria/chord.Afghanistan.Afghanistan/chord.Australia.Australia
+chord.Algeria.Algeria,chord.Afghanistan.Afghanistan/chord.Australia.Australia
+chord.Afghanistan.Afghanistan,chord.Australia.Australia

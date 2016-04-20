@@ -25,6 +25,9 @@
 </head>
 
 <body data-spy="scroll" data-target="#raw-nav">
+    
+  <!-- <div class="tooltipChordDiagram"></div> -->
+  <div id="tooltipChordDiagramValue"></div>
 
   <nav class="navbar" role="navigation" id="raw-nav">
     <div class="container">
@@ -123,6 +126,8 @@
   <script type="text/javascript" src="bower_components/chartjs/world.js"></script>
   <script type="text/javascript" src="bower_components/chartjs/france-departements.js"></script>
   <script type="text/javascript" src="bower_components/chartjs/france-regions.js"></script>
+  <!-- ChordDiagram - underscore -->
+  <script type="text/javascript" src="bower_components/chordDiagram/underscore.js"></script>
 
     
 
@@ -162,7 +167,9 @@
       'charts/polarChart.js',
       'charts/cartogramSquare.js',
       'charts/cartogramAnamorphose.js',
-      'charts/cartogramAnamorphoseMonde.js'
+      'charts/cartogramAnamorphoseMonde.js',
+      'charts/chordDiagram.js',
+      'charts/chordDiagramValue.js'
     ]);
   </script>
 

@@ -33,7 +33,7 @@
 	// -----------------
 	var chart = raw.chart()
 		.title("Bubble Map")
-		.description("Simple representation of a Bubble Map.<br><a href='http://www.highcharts.com/maps/demo/map-bubble'>http://www.highcharts.com/maps/demo/map-bubble</a><br>For more base map, visit <a href='http://code.highcharts.com/mapdata/'>http://code.highcharts.com/mapdata/</a><br><br>Exemple: Yes<br><img src='imgs/exemples/exemple_bubbleMap_monde.png' class='img-exemple'>")
+		.description("Simple representation of a Bubble Map.<br><a href='http://www.highcharts.com/maps/demo/map-bubble'>http://www.highcharts.com/maps/demo/map-bubble</a><br>For more base map, visit <a href='http://code.highcharts.com/mapdata/'>http://code.highcharts.com/mapdata/</a><br><br>Exemple: Yes<br><img src='imgs/exemples/exemple_bubbleMap_monde.png' class='img-exemple'>Data model file : Yes<br><a class='data-model' href='bubbleMap/modele-bubbleMap-France_Dep_Reg-World.xlsx'></a>")
 		.thumbnail("imgs/cartogramAnamorphose.png")
 		.thumbnail("imgs/bubbleMap.png")
 		.model(model)

@@ -49,7 +49,7 @@
 	// -----------------
 	var chart = raw.chart()
 		.title("Arc connection")	
-		.description("Simple arc connection diagram.<br><a href='http://bl.ocks.org/comeetie/6506916'>http://bl.ocks.org/comeetie/6506916</a><br><a href='http://mbostock.github.io/protovis/ex/arc.html'>http://mbostock.github.io/protovis/ex/arc.html</a><br><br>Exemple: Yes<br><img src='imgs/exemples/exemple_arcConnection.png' class='img-exemple'>")
+		.description("Simple arc connection diagram.<br><a href='http://bl.ocks.org/comeetie/6506916'>http://bl.ocks.org/comeetie/6506916</a><br><a href='http://mbostock.github.io/protovis/ex/arc.html'>http://mbostock.github.io/protovis/ex/arc.html</a><br><br>Exemple: Yes<br><img src='imgs/exemples/exemple_arcConnection.png' class='img-exemple'>Data model file : Yes<br><a class='data-model' href='arcConnection/modele-arcConnection.xlsx'></a>")
 		.thumbnail("imgs/arcConnection.png")
 		.model(model)
 

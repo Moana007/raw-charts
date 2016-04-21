@@ -1,19 +1,19 @@
-CountryCode,Population
-FR-A,20
-FR-B,20
-FR-C,30
-FR-D,50
-FR-E,60
-FR-F,80
-FR-G,120
-FR-H,200
-FR-I,110
-FR-J,80
-FR-K,90
-FR-L,100
-FR-M,90
-FR-N,90
-FR-O,90
-FR-P,90
-FR-Q,90
-FR-R,90
+RegionCode,RegionName,Population
+FR-A,Corse,10
+FR-B,Provence-Alpes-Côte-d'Azur,20
+FR-C,La Réunion,30
+FR-D,Guadeloupe,40
+FR-E,Martinique,50
+FR-F,Mayotte,60
+FR-G,Guyane Française,70
+FR-H,Alsace Champagne-Ardenne Lorraine,80
+FR-I,Nord-Pas-de-Calais Picardie,90
+FR-J,Île de France,100
+FR-K,Bourgogne-Franche-Comté,110
+FR-L,Centre-Val de Loire,120
+FR-M,Auvergne-Rhône-Alpes,130
+FR-N,Aquitaine Limousin Poitou-Charentes,140
+FR-O,Normandie,150
+FR-P,Bretagne,160
+FR-Q,Pays de la Loire,170
+FR-R,Languedoc-Roussillon Midi-Pyrénées,180

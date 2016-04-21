@@ -29,10 +29,10 @@ angular.module('raw.controllers', [])
       { title : '<span class="simpleListeData">Modèle de données : Bubble Map France (Régions 2016)</span>', url : 'data/bubbleMap/model-bubbleMap-fr-regions.csv' },
 
       { title : '<span class="titleListeData lvl2">Chord Diagram<span>'},
-      { title : '<span class="simpleListeData">Relation Employées (Chord diagram SANS valeur)</span>', url : 'data/relationEmployes.csv' },
-      { title : '<span class="simpleListeData">Imports Pays 1 (Chord diagram SANS valeur)</span>', url : 'data/importsCountry_chord1.csv' },
-      { title : '<span class="simpleListeData">Imports Pays 2 (Chord diagram SANS valeur)</span>', url : 'data/importsCountry_chord2.csv' },
-      { title : '<span class="simpleListeData">Imports Pays (Chord diagram AVEC valeur)</span>', url : 'data/importsCountryValue_chord1.csv' },
+      { title : '<span class="simpleListeData">Relation Employées (Chord diagram - Only relation)</span>', url : 'data/chordDiagram/relationEmployes.csv' },
+      { title : '<span class="simpleListeData">Imports Pays 1 (Chord diagram - Only relation)</span>', url : 'data/chordDiagram/importsCountry_chord1.csv' },
+      { title : '<span class="simpleListeData">Imports Pays 2 (Chord diagram - Only relation)</span>', url : 'data/chordDiagram/importsCountry_chord2.csv' },
+      { title : '<span class="simpleListeData">Imports Pays (Chord diagram - Relation + value)</span>', url : 'data/importsCountryValue_chord.csv' },
       
     ]
 
@@ -139,8 +139,17 @@ angular.module('raw.controllers', [])
         } else {
           $('#block_exemple .image_exemple_show').attr('src', '#');
           $('.txt-showExemple').hide();
-          // ENLEVER BTN 'Show data exemple'
         }
+
+        var dataModel_url = $('.data-model').attr('href');
+        if (dataModel_url != undefined ) {
+          $('.downloader_model a').attr('href', 'modelData_excel/'+dataModel_url);
+          $('.downloader_model').show();
+        } else {
+          $('.downloader_model a').attr('href','#');
+          $('.downloader_model').hide();
+        }
+
       }, 500);
 
       $("#block_exemple").hide();
@@ -160,8 +169,6 @@ angular.module('raw.controllers', [])
         hideShow.text('Show');
       } 
     });
-    // $('.txt-showExemple').on('click', function(){
-    // image_exemple_show
 
     function refreshScroll(){
       $('[data-spy="scroll"]').each(function () {

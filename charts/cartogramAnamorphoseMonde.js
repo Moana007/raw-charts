@@ -37,7 +37,7 @@
   // -----------------
   var chart = raw.chart()
     .title("Anamorphose Cartogram: World")
-    .description("Anamorphic cartogram of the world. Representation that highlights the larger geographic entities<br><a href='http://th-mayer.de/cartogram/'>http://th-mayer.de/cartogram/</a><br><br>Exemple: Yes<br><img src='imgs/exemples/exemple_anamorphose_monde.png' class='img-exemple'>")
+    .description("Anamorphic cartogram of the world. Representation that highlights the larger geographic entities<br><a href='http://th-mayer.de/cartogram/'>http://th-mayer.de/cartogram/</a><br><br>Exemple: Yes<br><img src='imgs/exemples/exemple_anamorphose_monde.png' class='img-exemple'>Data model file : Yes<br><a class='data-model' href='cartogram-anamorphoses/modele-anamorphoses-France-World.xlsx'></a>")
     .thumbnail("imgs/cartogramAnamorphose.png")
     .thumbnail("imgs/cartogramAnamorphoseMonde.png")
     .model(model)

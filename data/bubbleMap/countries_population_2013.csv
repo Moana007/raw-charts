@@ -1,215 +1,207 @@
-CountryCode,Population
-AF,30552
-AL,2897
-DZ,39208
-AS,55
-ADO,79
-AO,21472
-AG,90
-AR,41446
-AM,2977
-AW,103
-AU,23129
-AT,8480
-AZ,9417
-BS,377
-BH,1332
-BD,156595
-BB,285
-BY,9466
-BE,11183
-BZ,332
-BJ,10323
-BM,65
-BT,754
-BO,10671
-BA,3829
-BW,2021
-BR,200362
-BN,418
-BG,7265
-BF,16935
-BI,10163
-CV,499
-KH,15135
-CM,22254
-CA,35154
-KY,58
-CF,4616
-TD,12825
-CHI,162
-CL,17620
-CN,1357380
-CO,48321
-KM,735
-ZAR,67514
-CG,4448
-CR,4872
-CI,20316
-HR,4256
-CU,11266
-CW,154
-CY,1141
-CZ,10514
-DK,5615
-DJ,873
-DM,72
-DO,10404
-EC,15738
-EG,82056
-SV,6340
-GQ,757
-ER,6333
-EE,1318
-ET,94101
-FO,49
-FJ,881
-FI,5439
-FR,65940
-PF,277
-GA,1672
-GM,1849
-GE,4487
-DE,80652
-GH,25905
-GR,11028
-GL,56
-GD,106
-GU,165
-GT,15468
-GN,11745
-GW,1704
-GY,800
-HT,10317
-HN,8098
-HK,7188
-HU,9894
-IS,324
-IN,1252140
-ID,249866
-IR,77447
-IQ,33417
-IE,4598
-IMY,86
-IL,8060
-IT,60234
-JM,2715
-JP,127339
-JO,6460
-KZ,17035
-KE,44354
-KI,102
-KP,24895
-KR,50220
-KSV,1824
-KW,3369
-KG,5720
-LA,6770
-LV,2013
-LB,4467
-LS,2074
-LR,4294
-LY,6202
-LI,37
-LT,2958
-LU,543
-MO,566
-MK,2107
-MG,22925
-MW,16363
-MY,29717
-MV,345
-ML,15302
-MT,423
-MH,53
-MR,3890
-MU,1259
-MX,122332
-FM,104
-MD,3559
-MC,38
-MN,2839
-ME,621
-MA,33008
-MZ,25834
-MM,53259
-NA,2303
-NP,27797
-NL,16804
-NC,262
-NZ,4442
-NI,6080
-NE,17831
-NG,173615
-MP,54
-NO,5080
-OM,3632
-PK,182143
-PW,21
-PA,3864
-PG,7321
-PY,6802
-PE,30376
-PH,98394
-PL,38514
-PT,10457
-PR,3615
-QA,2169
-ROM,19981
-RU,143500
-RW,11777
-WS,190
-SM,31
-ST,193
-SA,28829
-SN,14133
-RS,7164
-SC,89
-SL,6092
-SG,5399
-SX,40
-SK,5413
-SI,2060
-SB,561
-SO,10496
-ZA,53157
-SS,11296
-ES,46618
-LK,20483
-KN,54
-LC,182
-MF,31
-VC,109
-SD,37964
-SR,539
-SZ,1250
-SE,9600
-CH,8088
-SY,22846
-TJ,8208
-TZ,49253
-TH,67011
-TMP,1180
-TG,6817
-TO,105
-TT,1341
-TN,10887
-TR,74933
-TM,5240
-TC,33
-TV,10
-UG,37579
-UA,45490
-AE,9346
-GB,64107
-US,316129
-UY,3407
-UZ,30243
-VU,253
-VE,30405
-VN,89709
-VI,105
-WBG,4170
-YE,24407
-ZM,14539
-ZW,14150
+CountryCode,Country,Population
+AF,Afghanistan,30552
+AL,Albania,2897
+DZ,Algeria,39208
+AS,American Samoa,55
+AD,Andorra,79
+AO,Angola,21472
+AG,Antigua and Barbuda,90
+AR,Argentina,41446
+AM,Armenia,2977
+AU,Australia,23129
+AT,Austria,8480
+AZ,Azerbaijan,9417
+BS,The Bahamas,377
+BH,Bahrain,1332
+BD,Bangladesh,156595
+BB,Barbados,285
+BY,Belarus,9466
+BE,Belgium,11183
+BZ,Belize,332
+BJ,Benin,10323
+BT,Bhutan,754
+BO,Bolivia,10671
+BA,Bosnia and Herzegovina,3829
+BW,Botswana,2021
+BR,Brazil,200362
+BN,Brunei,418
+BG,Bulgaria,7265
+BF,Burkina Faso,16935
+BI,Burundi,10163
+CV,Cape Verde,499
+KH,Cambodia,15135
+CM,Cameroon,22254
+VA,Vatican,1000
+CA,Canada,35154
+CF,Central African Republic,4616
+TD,Chad,12825
+KV,Kosovo,1000
+TL,East Timor,1000
+CL,Chile,17620
+CN,China,1357380
+CO,Colombia,48321
+NR,Nauru,500
+KM,Comoros,735
+CG,Republic of Congo,4448
+CR,Costa Rica,4872
+CI,Ivory Coast,20316
+TW,Taiwan,500
+HR,Croatia,4256
+RO,Romania,1000
+CU,Cuba,11266
+EH,Western Sahara,1000
+CY,Cyprus,1141
+CZ,Czech Republic,10514
+DK,Denmark,5615
+DJ,Djibouti,873
+DM,Dominica,72
+DO,Dominican Republic,10404
+EC,Ecuador,15738
+EG,Egypt,82056
+SV,El Salvador,6340
+GQ,Equatorial Guinea,757
+ER,Eritrea,6333
+EE,Estonia,1318
+ET,Ethiopia,94101
+FO,Faroe Islands,49
+FJ,Fiji,881
+FI,Finland,5439
+FR,France,65940
+GA,Gabon,1672
+GM,Gambia,1849
+GE,Georgia,4487
+DE,Germany,80652
+GH,Ghana,25905
+GR,Greece,11028
+GL,Greenland,56
+GD,Grenada,106
+GU,Guam,165
+GT,Guatemala,15468
+GN,Guinea,11745
+GW,Guinea Bissau,1704
+GY,Guyana,800
+HT,Haiti,10317
+HN,Honduras,8098
+HU,Hungary,9894
+IS,Iceland,324
+IN,India,1252140
+ID,Indonesia,249866
+IR,Iran,77447
+IQ,Iraq,33417
+IE,Ireland,4598
+IL,Israel,8060
+IT,Italy,60234
+JM,Jamaica,2715
+JP,Japan,127339
+JO,Jordan,6460
+KZ,Kazakhstan,17035
+KE,Kenya,44354
+KI,Kiribati,102
+KP,North Korea,24895
+KR,South Korea,50220
+KW,Kuwait,3369
+KG,Kyrgyzstan,5720
+LA,Laos,6770
+LV,Latvia,2013
+LB,Lebanon,4467
+LS,Lesotho,2074
+LR,Liberia,4294
+LY,Libya,6202
+LI,Liechtenstein,37
+LT,Lithuania,2958
+LU,Luxembourg,543
+MK,Macedonia,2107
+MG,Madagascar,22925
+MW,Malawi,16363
+MY,Malaysia,29717
+MV,Maldives,345
+ML,Mali,15302
+MT,Malta,423
+MH,Marshall Islands,53
+MR,Mauritania,3890
+MU,Mauritius,1259
+MX,Mexico,122332
+FM,Federated States of Micronesia,104
+MD,Moldova,3559
+MC,Monaco,38
+MN,Mongolia,2839
+ME,Montenegro,621
+MA,Morocco,33008
+MZ,Mozambique,25834
+MM,Myanmar,53259
+NA,Namibia,2303
+NP,Nepal,27797
+NL,Netherlands,16804
+NC,Northern Cyprus,262
+NZ,New Zealand,4442
+NI,Nicaragua,6080
+NE,Niger,17831
+NG,Nigeria,173615
+MP,Northern Mariana Islands,54
+NO,Norway,5080
+OM,Oman,3632
+PK,Pakistan,182143
+PW,Palau,21
+PA,Panama,3864
+PG,Papua New Guinea,7321
+PY,Paraguay,6802
+PE,Peru,30376
+PH,Philippines,98394
+PL,Poland,38514
+PT,Portugal,10457
+PR,Puerto Rico,3615
+QA,Qatar,2169
+RU,Russia,143500
+RW,Rwanda,11777
+WS,Samoa,190
+SM,San Marino,31
+ST,Sao Tome and Principe,193
+SA,Saudi Arabia,28829
+SN,Senegal,14133
+RS,Republic of Serbia,7164
+SC,Seychelles,89
+SL,Sierra Leone,6092
+SG,Singapore,5399
+SX,Somaliland,40
+SK,Slovakia,5413
+SI,Slovenia,2060
+SB,Solomon Islands,561
+SO,Somalia,10496
+ZA,South Africa,53157
+SS,South Sudan,11296
+ES,Spain,46618
+LK,Sri Lanka,20483
+KN,Saint Kitts and Nevis,54
+LC,Saint Lucia,182
+VC,Saint Vincent and the Grenadines,109
+SD,Sudan,37964
+SR,Suriname,539
+SZ,Swaziland,1250
+SE,Sweden,9600
+CH,Switzerland,8088
+SY,Syria,22846
+TJ,Tajikistan,8208
+CD,Democratic Republic of the Congo,1000
+TZ,United Republic of Tanzania,49253
+TH,Thailand,67011
+TG,Togo,6817
+TO,Tonga,105
+TT,Trinidad and Tobago,1341
+TN,Tunisia,10887
+TR,Turkey,74933
+TM,Turkmenistan,5240
+TV,Tuvalu,10
+UG,Uganda,37579
+UA,Ukraine,45490
+AE,United Arab Emirates,9346
+GB,United Kingdom,64107
+US,United States of America,316129
+UY,Uruguay,3407
+UZ,Uzbekistan,30243
+VU,Vanuatu,253
+VE,Venezuela,30405
+VN,Vietnam,89709
+VI,United States Virgin Islands,105
+YE,Yemen,24407
+ZM,Zambia,14539
+ZW,Zimbabwe,14150

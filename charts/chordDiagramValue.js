@@ -42,8 +42,8 @@
 	// --- THE CHART ---
 	// -----------------
 	var chart = raw.chart()
-		.title("Chord diagram (with value)")	
-		.description("A simple chord diagram in D3.js adjusting with value.<br><a href='http://www.delimited.io/blog/2013/12/8/chord-diagrams-in-d3'>http://www.delimited.io/blog/2013/12/8/chord-diagrams-in-d3</a><br><a href='https://github.com/sghall/d3-chord-diagrams/blob/master/trade-a.html'>https://github.com/sghall/d3-chord-diagrams/blob/master/trade-a.html</a><br><br>Exemple: In Progress...<br><img src='imgs/exemples/exemple_chordDiagramValue.png' class='img-exemple'>")
+		.title("Chord diagram (relation + value)")	
+		.description("A simple chord diagram in D3.js adjusting with value.<br><a href='http://www.delimited.io/blog/2013/12/8/chord-diagrams-in-d3'>http://www.delimited.io/blog/2013/12/8/chord-diagrams-in-d3</a><br><a href='https://github.com/sghall/d3-chord-diagrams/blob/master/trade-a.html'>https://github.com/sghall/d3-chord-diagrams/blob/master/trade-a.html</a><br><br>Exemple: In Progress...<br><img src='imgs/exemples/exemple_chordDiagramValue.png' class='img-exemple'>Data model file : Yes<br><a class='data-model' href='chordDiagram/modele-chordDiagram-RelationAndValue.xlsx'></a>")
 		.thumbnail("imgs/chordDiagramValue.png")
 		.model(model)
 
@@ -66,7 +66,7 @@
 			.defaultValue(.7);
 
 		var chartStrokeWidth = chart.number()
-			.title('Stroke width')
+			.title('Lines stroke width')
 			.defaultValue(.25);
 
 		var chartArc = chart.number()
@@ -208,7 +208,9 @@
 	            .attr("transform", "translate(" + w / 2 + "," + h / 2 + ")");
 
 	            svg.append("circle")
-	                .attr("r", r0 + 100);
+	                .attr("r", r0 + chartArc())
+	                .style("fill","none")
+                	.style("pointer-events","all");
 
 	        var rdr = chordRdr(matrix, mmap);
 	        chord.matrix(matrix);
@@ -218,6 +220,7 @@
 	            .data(chord.groups())
 	          .enter().append("svg:g")
 	            .attr("class", "group")
+	            .style("fill-opacity", ".8")
 	            .on("mouseover", mouseover)
 	            .on("mouseout", function (d) { d3.select("#tooltipChordDiagramValue").style("visibility", "hidden") });
 
@@ -231,7 +234,7 @@
 	        g.append("svg:text")
 	            .each(function(d) { d.angle = (d.startAngle + d.endAngle) / 2; })
 	            .attr("dy", ".35em")
-	            .style("font-family", "helvetica, arial, sans-serif")
+	            .style("font-family", "helvetica")
 	            .style("font-size", "9px")
 	            .attr("text-anchor", function(d) { return d.angle > Math.PI ? "end" : null; })
 	            .attr("transform", function(d) {
@@ -245,7 +248,11 @@
 	                .data(chord.chords())
 	              .enter().append("svg:path")
 	                .attr("class", "chord")
-	                .style("stroke", function(d) { return d3.rgb(fill(rdr(d).sname)).darker(); })
+	                .style("stroke", function(d) {
+	                  if(d3.rgb(fill(rdr(d).sname)).darker()) {
+	                    return d3.rgb(fill(rdr(d).sname)).darker(); 
+	                  } else { return "#000"; }
+	                })
 	                .style("fill", function(d) { return fill(rdr(d).sname); })
 	        		.style("fill-opacity", chartOpacity())
 	        		.style("stroke-width", chartStrokeWidth())

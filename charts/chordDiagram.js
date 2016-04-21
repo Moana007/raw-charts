@@ -30,8 +30,8 @@
 	// --- THE CHART ---
 	// -----------------
 	var chart = raw.chart()
-		.title("Chord diagram (without value)")	
-		.description("A simple chord diagram in D3.js. Only for represent relationships, without value.<br><a href='http://bl.ocks.org/mbostock/1046712'>http://bl.ocks.org/mbostock/1046712</a><br><br>Exemple: In Progress...<br><img src='imgs/exemples/exemple_chordDiagram.png' class='img-exemple'>")
+		.title("Chord diagram (Only relation)")	
+		.description("A simple chord diagram in D3.js. Only for represent relationships, without value.<br><a href='http://bl.ocks.org/mbostock/1046712'>http://bl.ocks.org/mbostock/1046712</a><br><br>Exemple: In Progress...<br><img src='imgs/exemples/exemple_chordDiagram.png' class='img-exemple'>Data model file : Yes<br><a class='data-model' href='chordDiagram/modele-chordDiagram-OnlyRelation.xlsx'></a>")
 		.thumbnail("imgs/chordDiagram.png")
 		.model(model)
 

@@ -43,7 +43,7 @@
 	// -----------------
 	var chart = raw.chart()
 		.title("Anamorphose Cartogram: France")	
-		.description("Anamorphic cartogram of France. Representation that highlights the larger geographic entities<br><a href='http://bl.ocks.org/comeetie/6506916'>http://bl.ocks.org/comeetie/6506916</a><br><a href='http://www.comeetie.fr/galerie/d3-cartogram/'>http://www.comeetie.fr/galerie/d3-cartogram/</a><br><br>Exemple: Yes<br><img src='imgs/exemples/exemple_anamorphose_france.png' class='img-exemple'>")
+		.description("Anamorphic cartogram of France. Representation that highlights the larger geographic entities<br><a href='http://bl.ocks.org/comeetie/6506916'>http://bl.ocks.org/comeetie/6506916</a><br><a href='http://www.comeetie.fr/galerie/d3-cartogram/'>http://www.comeetie.fr/galerie/d3-cartogram/</a><br><br>Exemple: Yes<br><img src='imgs/exemples/exemple_anamorphose_france.png' class='img-exemple'>Data model file : Yes<br><a class='data-model' href='cartogram-anamorphoses/modele-anamorphoses-France-World.xlsx'></a>")
 		.thumbnail("imgs/cartogramAnamorphose.png")
 		.model(model)
 
